@@ -114,7 +114,7 @@ h2 {
     background-color: #1B1A1A;
     color: white;
     border-radius: 15px;
-    transition: background-color 0.2 ease-out, color 0.2s ease-out;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
 .main__our-film {
@@ -409,6 +409,12 @@ h3 {
 .main__featured-view {
     width: 1200px;
     text-align: center;
+}
+
+.main__meet-background {
+    width: 1440px;
+    margin: 0 auto;
+    height: 600px;
 }
 
 
