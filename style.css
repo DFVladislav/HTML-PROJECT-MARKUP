@@ -417,7 +417,26 @@ h3 {
     height: 600px;
 }
 
+.main__meet-our-block {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    gap: 16px;
+}
 
+.main__meet-our {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main__meet-all-team {
+    width: 780px;
+    height: 400px;
+}
 
 
 
@@ -566,7 +585,6 @@ h3 {
     }
 
     .main__info-stephen span {
-        opacity: 0.6;
         font-size: 8px;
     }
 
