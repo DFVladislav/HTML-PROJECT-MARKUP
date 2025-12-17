@@ -78,7 +78,7 @@ header {
 }
 
 .main__first-text {
-    padding: 79px 0;
+    padding: 137px 0 0 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -104,7 +104,7 @@ h2 {
 .main__read {
     margin: 0px 25px;
     padding: 10px 10px;
-    max-width: 100px;
+    max-width: 110px;
     text-align: center;
     letter-spacing: 0.4px;
 
@@ -387,15 +387,13 @@ h3 {
     padding: 291px 0 0 0;
 }
 
-.main__featured-cards:hover{
+.main__featured-cards:hover {
     transform: scale(1.1);
-  background-position: center -20px;
 }
 
 .main__featured-info:hover {
     opacity: 1;
     transition: ease-in-out 0.2s
-
 }
 
 .main__featured-cards:nth-child(2) {
@@ -423,20 +421,117 @@ h3 {
     margin: 0 auto;
     padding: 100px 0;
     display: flex;
-    gap: 16px;
+    gap: 20px;
 }
 
 .main__meet-our {
-    width: 380px;
+    width: 510px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-size: 15px;
 }
 
-.main__meet-all-team {
-    width: 780px;
+.main__meet-team-block {
+    width: 100%;
     height: 400px;
+    padding: 10px 0 0 20px;
 }
+
+.main__meet-info {
+    width: 270px;
+}
+
+
+
+.main__meet-team {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.main__meet-name {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.main__meet-opacity {
+    font-size: 14px;
+    opacity: 0.6;
+    padding: 0 144px 0 0;
+}
+
+.main__goodfit-background {
+    margin: 0 auto;
+    background-color: #CEC4BC;
+    width: 1440px;
+    height: 314px;
+    display: flex;
+    justify-content: center;
+}
+
+h2:last-child {
+    line-height: 42px;
+    width: 600px;
+    font-size: 40px;
+    color: black;
+}
+
+.main__goodfit-text {
+    width: 1100px;
+}
+
+.main__flex-goodfit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main__touch {
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: #645C55;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 1440px;
+    height: auto;
+    margin: 62px auto;
+}
+
+.footer-license-text p {
+    line-height: 24px;
+}
+
+.footer__license {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 26px;
+}
+
+.footer__images {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+.footer__links {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    margin: 62px 0 0 0;
+}
+
 
 
 
