@@ -345,7 +345,9 @@ h3 {
 .main__featured-main {
     margin: 0 auto;
     background-color: #F7F7F7;
-    width: 1440px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 900px;
 }
 
@@ -543,7 +545,7 @@ footer {
 @media(max-width: 500px) {
 
     body {
-        width: 100%
+        max-width: 500px;
     }
 
     .header__logo {
@@ -807,7 +809,6 @@ footer {
 
     .main__customers {
         margin: 0 auto;
-        padding: 0 0 0 5px;
         padding-bottom: 300px;
         background-color: #403E3B;
         width: 100%;
@@ -850,7 +851,8 @@ footer {
 
     .main__customers-logo {
         display: flex;
-        margin: 0 0 0 10px;
+        margin: 0 15px 0 0;
+        justify-content: right;
         flex-wrap: wrap;
         gap: 96px;
     }
@@ -874,44 +876,51 @@ footer {
     }
 
     .main__featured-main {
-        margin: 0 auto;
+        margin: 100px auto;
         background-color: #F7F7F7;
         width: 100%;
-        height: 900px;
+        height: 100%;
     }
 
 
     .main__featured-all {
-        padding: 119px 136px 0 136px;
+        padding: 0;
     }
 
     .main__featured__text {
-        width: 600px;
-        font-size: 24px;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        margin: 0 0 50px 0;
     }
 
     .main__featured__text h2 {
+        text-align: center;
         font-size: 39px;
     }
 
     .main__featured-cards-container {
-        width: 1200px;
+        width: 100%;
         display: flex;
-        gap: 20px;
+        flex-direction: column;
+        gap: 0px;
     }
 
     .main__featured-cards {
-        margin: 42px 0;
+        margin: 10px 0;
         background: url(./img/town.svg);
-        width: 375px;
-        height: 456px;
+        width:100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-position: center;
         background-repeat: no-repeat;
-        transition: transform 0.3s ease, background-position 0.3s ease;
+        transition:none;
     }
 
     .main__featured-info {
         padding: 40px;
-        opacity: 0;
+        opacity: 1;
     }
 
     .main__featured-info p:nth-child(2) {
@@ -924,38 +933,44 @@ footer {
     }
 
     .main__featured-cards:hover {
-        transform: scale(1.1);
+        transform: none;
     }
 
     .main__featured-info:hover {
         opacity: 1;
-        transition: ease-in-out 0.2s
+        transition: none;
     }
 
     .main__featured-cards:nth-child(2) {
         background: url(./img/newyork.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .main__featured-cards:nth-child(3) {
         background: url(./img/lastfeature.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .main__featured-view {
-        width: 1200px;
+        width: 100%;
+        margin: 30px auto;
+        padding: 0 0 15px 0;
         text-align: center;
     }
 
     .main__meet-background {
         width: 100%;
         margin: 0 auto;
-        height: 600px;
+        height: 100%;
     }
 
     .main__meet-our-block {
         width: 100%;
-        height: 300px;
+        height: 100%;
         margin: 0 auto;
-        padding: 50px 0;
+        padding: 50px 0 0 30px;
         display: flex;
         gap: 20px;
     }
@@ -965,17 +980,21 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        font-size: 15px;
+        font-size: 16px;
+    }
+
+    .main__meet-our h2 {
+        font-size: 30px;
     }
 
     .main__meet-team-block {
         width: 100%;
-        height: 400px;
-        padding: 10px 0 0 20px;
+        height: 100%;
+        padding: 10px 0 100px 20px;
     }
 
     .main__meet-info {
-        width: 270px;
+        width: 100%;
     }
 
 
@@ -983,7 +1002,7 @@ footer {
     .main__meet-team {
         display: flex;
         align-items: center;
-        gap: 35px;
+        gap: 15px;
         flex-wrap: wrap;
     }
 
@@ -1001,21 +1020,23 @@ footer {
     .main__goodfit-background {
         margin: 0 auto;
         background-color: #CEC4BC;
-        width: 1440px;
-        height: 314px;
+        width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
     }
 
     h2:last-child {
         line-height: 42px;
-        width: 600px;
-        font-size: 40px;
+        width: 100%;
+        margin: 10px 0 0 10px;
+        text-align: left;
+        font-size: 20px;
         color: black;
     }
 
     .main__goodfit-text {
-        width: 1100px;
+        width: 100%;
     }
 
     .main__flex-goodfit {
@@ -1027,6 +1048,7 @@ footer {
 
     .main__touch {
         letter-spacing: 2px;
+        margin: 10px 0 0 10px;
         line-height: 20px;
         color: #645C55;
         text-transform: uppercase;
@@ -1045,6 +1067,7 @@ footer {
     .footer__license {
         display: flex;
         flex-direction: column;
+        margin: 0 0 0 10px;
         gap: 20px;
     }
 
@@ -1052,12 +1075,12 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 26px;
+        gap: 0px;
     }
 
     .footer__images {
         display: flex;
-        gap: 26px;
+        gap: 0px;
         align-items: center;
     }
 
@@ -1065,7 +1088,7 @@ footer {
         display: flex;
         gap: 26px;
         align-items: center;
-        margin: 62px 0 0 0;
+        margin: 62px 10px 0 0;
     }
 
 
