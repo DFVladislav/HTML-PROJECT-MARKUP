@@ -544,8 +544,9 @@ footer {
 
 @media(max-width: 500px) {
 
-    body {
-        max-width: 500px;
+   html, body {
+        width: 100%;
+        overflow-x: hidden;
     }
 
     .header__logo {
